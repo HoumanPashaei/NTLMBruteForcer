@@ -34,7 +34,7 @@ pip install requests requests-ntlm
 ## 🚀 Usage
 
 ```bash
-python ntlm_brute.py -d <url> -u <username> -P <password_file>
+python NTLM-BruteForcer.py -d <url> -u <username> -P <password_file>
 ```
 
 ### Arguments
@@ -54,17 +54,17 @@ python ntlm_brute.py -d <url> -u <username> -P <password_file>
 
 Single username:
 ```bash
-python ntlm_brute.py -d http://example.local/secure -u "CORP\\admin" -P passwords.txt
+python NTLM-BruteForcer.py -d http://example.local/secure -u "CORP\\admin" -P passwords.txt
 ```
 
 User list:
 ```bash
-python ntlm_brute.py -d https://intranet.local/protected -U users.txt -P passwords.txt
+python NTLM-BruteForcer.py -d https://intranet.local/protected -U users.txt -P passwords.txt
 ```
 
 Using a proxy:
 ```bash
-python ntlm_brute.py -d http://target -u "DOMAIN\\user" -P pass.txt -x http://127.0.0.1:8080
+python NTLM-BruteForcer.py -d http://target -u "DOMAIN\\user" -P pass.txt -x http://127.0.0.1:8080
 ```
 
 ---
@@ -78,13 +78,8 @@ python ntlm_brute.py -d http://target -u "DOMAIN\\user" -P pass.txt -x http://12
 
 ---
 
-## 📄 License
+## ❤️ Contributions
 
-MIT License
+Pull requests are welcome! Feel free to fork and improve this script.
 
 ---
-
-## 👨‍💻 Author
-
-Made with ❤️ by [Your Name or GitHub Handle]  
-Feel free to contribute or open issues!
