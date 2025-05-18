@@ -26,10 +26,7 @@ pip install -r requirements.txt
 Or manually:
 
 ```bash
-pip install requests requests-ntlm
-```
-```bash
-pip install requests colorama
+pip install requests requests-ntlm colorama
 ```
 ---
 
