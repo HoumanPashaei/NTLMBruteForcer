@@ -91,10 +91,4 @@ python NTLM-BruteForcer.py -d http://target -u "DOMAIN\\user" -P pass.txt -x htt
 - If the target auto-redirects from HTTP → HTTPS, it will be handled automatically
 - If the HTTPS response is 401, tool falls back to HTTP
 
----
 
-## ❤️ Contributions
-
-Pull requests are welcome! Feel free to fork and improve this script.
-
----
