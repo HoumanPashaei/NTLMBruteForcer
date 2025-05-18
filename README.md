@@ -79,7 +79,7 @@ python NTLM-BruteForcer.py -d http://target -u "DOMAIN\\user" -P pass.txt -x htt
 - Invalid credentials (non-latin1) are ignored silently to avoid crashing.
 - Progress is printed in a dynamic bar like:
   ```
-  [+] Progress: [■■■■■■□□□□□□] 52.5% (105/200)
+  [+] Progress: [■■■■■■□□□□□□] 60% (120/200)
   ```
 
 ---
