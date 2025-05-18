@@ -28,7 +28,9 @@ Or manually:
 ```bash
 pip install requests requests-ntlm
 ```
-
+```bash
+pip install requests colorama
+```
 ---
 
 ## 🚀 Usage
