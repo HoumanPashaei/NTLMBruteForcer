@@ -1,4 +1,4 @@
-# 🔐 NTLM Brute-Forcer with Multiprocessing and Auto-Redirect Detection
+# 🔐 NTLM Brute-Forcer with Multiprocessing
 
 A powerful and customizable Python tool to brute-force NTLM-authenticated web services.  
 Supports HTTP/HTTPS auto-detection, proxy usage, multiprocessing, and progress tracking.
@@ -66,6 +66,19 @@ Using a proxy:
 ```bash
 python NTLM-BruteForcer.py -d http://target -u "DOMAIN\\user" -P pass.txt -x http://127.0.0.1:8080
 ```
+
+---
+
+## 🧠 How It Works
+
+- Uses `multiprocessing.Pool` to run login attempts in parallel.
+- For each attempt, a `requests` session is created with retry + timeout handling.
+- If a credential works (HTTP 200), the attack stops immediately.
+- Invalid credentials (non-latin1) are ignored silently to avoid crashing.
+- Progress is printed in a dynamic bar like:
+  ```
+  [+] Progress: [■■■■■■□□□□□□] 52.5% (105/200)
+  ```
 
 ---
 
